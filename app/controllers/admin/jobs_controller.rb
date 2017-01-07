@@ -32,6 +32,7 @@ class Admin::JobsController < ApplicationController
       redirect_to admin_jobs_path
     else
       render :edit
+    end
   end
 
   def destroy
@@ -44,4 +45,5 @@ class Admin::JobsController < ApplicationController
   def job_params
     params.require(:job).permit(:title, :description)
   end
+
 end
