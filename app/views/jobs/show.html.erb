@@ -2,5 +2,8 @@
 
 <p>
   <%= simple_format(@job.description) %>
-
 </p>
+
+<div class="pull-left">
+  <%= link_to("Back", jobs_path, :class => "btn btn-default" ) %>
+</div>
